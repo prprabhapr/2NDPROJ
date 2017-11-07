@@ -1,0 +1,9 @@
+com\niit\collaboration\testDAO\TestBlog.class
+com\niit\collaboration\testDAO\TestComment.class
+com\niit\collaboration\testDAO\TestJob.class
+com\niit\collaboration\testDAO\TestForum.class
+com\niit\collaboration\testDAO\TestEvent.class
+com\niit\collaboration\testDAO\TestUser.class
+com\niit\collaboration\testDAO\TestFriend.class
+com\niit\collaboration\testDAO\TestJobApplied.class
+com\niit\collaboration\testDAO\TestForumReply.class
