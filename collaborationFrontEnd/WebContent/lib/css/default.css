@@ -15,7 +15,7 @@ a:hover{
 }
 h1 {
     font-weight:200;
-    color: #0000b3;
+    color: #00b211;
     font-size:16pt;
     background: transparent url(../img/h1.png) no-repeat center left;
     text-align: center;
@@ -162,7 +162,7 @@ form.register input[type=password]
 }
 .button, form.register input[type=submit]
 {
-    background: #0000b3 url(../img/overlay.png) repeat-x;
+    background: #00b211 url(../img/overlay.png) repeat-x;
     padding: 8px 10px 8px;
     color: #fff;
     text-decoration: none;
