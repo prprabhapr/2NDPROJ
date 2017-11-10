@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>manageUsers.H</title>
 <style type="text/css">
 body
 {
@@ -22,7 +22,7 @@ body
 </head>
 <body>
 <div data-ng-controller='AdminController as ctrl'>
-<h2 style="text-align: center; color: #0000b3"><font face="Vivaldi"><strong>View All Users</strong></font></h2>
+<h2 style="text-align: center; color: #0000b3"><strong>View All Users</strong></h2>
 <div class="container2" data-ng-if="users"  data-ng-repeat="u in users">
 <br>
 	<div class="row" style=" box-shadow: 5px 5px 5px #000;">
@@ -51,10 +51,10 @@ body
 		<div class="col-sm-3">
 		<table class="table table-hover">
 		<tr>
-			<td><a data-ng-if="u.status != 'A'" class="btn btn-success btn-md" href="" data-ng-click="ctrl.acceptUser(u)" class="btn">ACCEPT USER</a></td>	
+			<td><a data-ng-if="u.status != 'A'" class="btn btn-success btn-md" href="" data-ng-click="ctrl.acceptUser(u)" class="btn">ACCEPT</a></td>	
 		</tr>
 		<tr>
-			<td><a data-ng-if="u.status != 'R'" class="btn btn-danger btn-md" href="" data-ng-click="ctrl.rejectUser(u)" class="btn">REJECT USER</a></td>
+			<td><a data-ng-if="u.status != 'R'" class="btn btn-danger btn-md" href="" data-ng-click="ctrl.rejectUser(u)" class="btn">REJECT</a></td>
 		</tr>
 		</table>
 		</div>
