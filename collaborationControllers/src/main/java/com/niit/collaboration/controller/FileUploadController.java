@@ -43,23 +43,22 @@ public class FileUploadController
 			FileUpload fileUpload = new FileUpload();
 			System.out.println(aFile);
 			fileUpload.setFileName(session.getAttribute("username").toString());
-            fileUpload.setData(aFile.getBytes());//image 
-            fileUpload.setUsername(username);//login details
+            fileUpload.setData(aFile.getBytes());
+            fileUpload.setUsername(username);
             fileUploadDAO.save(fileUpload, username);
             
             FileUpload getFileUpload = fileUploadDAO.getFile(username);
          	String name = getFileUpload.getFileName();
          	System.out.println("Name = "+name);
          	System.out.println(getFileUpload.getData());
-         	byte[] imagefiles = getFileUpload.getData();  //image
+         	byte[] imagefiles = getFileUpload.getData();
          	try
          	{
-         		//change the path according to your workspace and the name of your project
          		String path="C:\\Users\\prabh\\Desktop\\SECPROJ\\collaborationFrontEnd\\WebContent\\images\\"+username;
          		File file=new File(path);
-         		//file.mkdirs();
+         		file.mkdirs();//
          		FileOutputStream fos = new FileOutputStream(file);
-         		fos.write(imagefiles); // write the array of bytes in username file.
+         		fos.write(imagefiles);
          		fos.close();
          		}catch(Exception e){
          		e.printStackTrace();

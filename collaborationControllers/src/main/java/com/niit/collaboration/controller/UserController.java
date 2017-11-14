@@ -79,7 +79,7 @@ public class UserController
 	public ResponseEntity<User> validateUser(@RequestBody User user) 
 	{
 		System.out.println("Name - "+user.getUsername());
-//		System.out.println("Password "+user.getPassword());
+		System.out.println("Password "+user.getPassword());//
 		boolean value = userDAO.validateUser(user.getUsername(), user.getPassword());
 		System.out.println(value);
 		if (value == false) 

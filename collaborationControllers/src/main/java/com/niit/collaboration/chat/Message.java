@@ -5,10 +5,7 @@ public class Message
 	private String message;
 	private int id;
 	
-	public Message()
-	{
-		//dummy constructor
-	}
+	public Message(){}
 	
 	public Message(int id, String message) 
 	{
