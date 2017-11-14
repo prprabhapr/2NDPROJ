@@ -127,7 +127,7 @@ app.factory('UserService', function($http, $q, $rootScope)
 		return $http.get(BASE_URL + "getUserList")
 		.then(function(response)
 			{
-//				console.log(response.data)
+			console.log(response.data)//
 				console.log("Recieved List Users "+response.status)
 				return response.data
 	

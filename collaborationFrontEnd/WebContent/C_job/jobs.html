@@ -24,13 +24,13 @@ body
 .btn-primary:visited,
 .btn-primary:focus
 {
-    background-color: #0000b3;
+    background-color: #1bc115;
     border-color: #000;
 }
 </style>
 </head>
 <body>
-	<h1 style="text-align: center; color: #0000b3"><strong>Available Jobs</strong></h1>
+	<h1 style="text-align: center; color: green"><strong>Available Jobs</strong></h1>
 	<div class="container" data-ng-controller="UserController as ctrl">
 		<div class="row" data-ng-repeat="j in jobs">
 			<div class="col-sm-12">
@@ -58,7 +58,7 @@ body
 						<td colspan="3">Description: {{j.description}}</td>
 					</tr>
 					<tr>
-						<td colspan="3"><p style="text-align: right"><a href="" class="btn btn-primary btn-lg" data-ng-click="ctrl.applyJob(j)">Apply Job</a></p>
+						<td colspan="3"><p style="text-align: right; color: green"><a href="" class="btn btn-primary btn-lg" data-ng-click="ctrl.applyJob(j)">Apply Job</a></p>
 					</tr>
 				</table>
 			</div>

@@ -10,7 +10,7 @@ app.factory('AdminService', function($http, $q, $rootScope)
 			return $http.get(BASE_URL + "viewAllForums")
 			.then(function(response)
 				{
-//					console.log(response.data)
+				console.log(response.data)//
 					console.log("Recieved All Forums "+response.status)
 					return response;
 				})

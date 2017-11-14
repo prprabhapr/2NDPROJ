@@ -4,6 +4,7 @@
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
+<title>INDEX.H</title>
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="lib/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
@@ -59,7 +60,7 @@ body
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
       		<li data-ng-if="currentUser.role=='ADMIN'">
-				<a style="color: white" href="#/admin">MANAGE WEBSITE</a></li>
+				<a style="color: white" href="#/admin">ADMIN PAGE</a></li>
      		<li data-ng-show="currentUser.username">
      			<img data-ng-src="images/{{currentUser.username}}" onerror="this.src='images/profilepic.png'" class="img-circle" height="35" width="35"></li>
      		<li data-ng-show="currentUser.username">
@@ -72,19 +73,19 @@ body
 				<a style="color: white" href="#/register"><span class="glyphicon glyphicon-user"></span>SIGN UP</a></li>
 			
 	</ul>
-<!--  -->     <form class="navbar-form navbar-left">
-<!--   -->      <div class="form-group">
-<!--  -->         <input type="text" class="form-control" placeholder="Search"> 
-<!--  -->       </div>
-<!--  -->       <button type="submit" class="btn btn-default">Submit</button>
-<!--    -->   </form>
+<!--      <form class="navbar-form navbar-left"> --> 
+<!--        <div class="form-group"> --> 
+<!--          <input type="text" class="form-control" placeholder="Search">  --> 
+<!--        </div> --> 
+<!--        <button type="submit" class="btn btn-default">Submit</button> --> 
+<!--     </form> --> 
       <ul class="nav navbar-nav navbar-left">
         <li><a style="color: white" href="#/viewBlogs">BLOGS</a></li>
        	<li><a style="color: white" href="#/viewForums">FORUMS</a></li>
        	<li><a style="color: white" href="#/viewJobs">JOBS</a></li>
        	<li><a style="color: white" href="#/viewEvents">EVENTS</a></li>
        	<li data-ng-show="currentUser.username">
-				<a style="color: white" href="#/viewUsers"><span class="glyphicon glyphicon-user"></span>SEARCH USERS</a></li>
+				<a style="color: white" href="#/viewUsers"><span class="glyphicon glyphicon-user"></span>FIND USERS</a></li>
 	 </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -124,8 +125,8 @@ body
             </table>
            	
             </li>
-<!--   -->          <li role="separator" class="divider"></li>
-<!--    -->         <li><a href="#">Separated link</a></li> 
+<!--             <li role="separator" class="divider"></li>-->
+<!--            <li><a href="#">Separated link</a></li> -->
           </ul>
         </li>
       </ul>

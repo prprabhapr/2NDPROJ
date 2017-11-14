@@ -50,7 +50,7 @@ app.config(function($routeProvider)
 	{
 		templateUrl : 'C_forum/forums.html',
 		controller : 'ForumController'	
-	})
+	}) 
 		.when('/addForum',
 	{
 		templateUrl : 'C_forum/forums.html',
